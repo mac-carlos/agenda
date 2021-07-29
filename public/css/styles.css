@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* 
+{
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root 
+{
+	--blue: #0a7cfe;
+	--gray: #f7f7f9;
+	--green: #2ea44f;
+	--orange: #f9b05a;
+	--txt-gray: #bababc;
+	--bg:  #f7f7f9;
+	
+	--radius: .5rem;
+}
+
+html
+{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body
+{
+	max-width: 41rem;
+    margin: 5rem auto;
+    padding: 0 1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.75;
+	-moz-osx-font-smoothing: grayscale !important;
+    -moz-font-smoothing: subpixel-antialiased !important;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    text-rendering: geometricPrecision !important;
+}
+
+h1 { font-size: 200%; }
+
+p, input { font-size: 100%; }
+
+input 
+{
+	width: 50%;
+	border: none;
+	border-radius: var(--radius);
+	background-color: var(--gray);
+	padding: .8rem 1rem;
+	margin-bottom: 1rem;
+}
+
+ul { margin-left: 1rem; }
+
+li { padding-bottom: .5rem; }
+
+button {
+	display: block;
+	padding: .3rem 1.5rem;
+	border-radius: var(--radius);
+	border: 1px solid;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn-green {
+    border-color: #30934d;
+	background-color: #2ea44f;
+	color: #fff;
+}
