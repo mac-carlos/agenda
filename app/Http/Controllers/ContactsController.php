@@ -10,8 +10,17 @@ class ContactsController extends Controller
 {
     public function index()
     {
-        $contacts = Contacts::all();
-        return view('contacts', ['contacts' => $contacts]);
+        $search = request('search');
+
+        if($search) {
+            $contacts = Contacts::where([
+                ['nome', 'like', '%'.$search.'%']
+            ])->get();
+        } else { 
+            $contacts = Contacts::all(); 
+        }
+
+        return view('contacts', ['contacts' => $contacts, 'search' => $search]);
     }
 
     public function show($id) 
