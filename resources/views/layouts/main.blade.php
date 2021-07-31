@@ -12,7 +12,10 @@
         <link rel="icon" href="favicon.svg"/>
     </head>
 
-    <body>
+    <main>
+        @if(session('msg'))
+            <div class="msg">{{ session('msg') }}</div>
+        @endif
         @yield('content')
-    </body>
+    </main>
 </html>

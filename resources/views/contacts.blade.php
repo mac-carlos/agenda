@@ -6,10 +6,18 @@
 
 <h1>Contatos</h1>
 
-<div>
-    <a href="/new" style="text-decoration: none">
-        <button class="btn-green">Novo Contato</button>
-    </a>
+<div class="flex search">
+    <form action="" >
+        <input type="text" id="search" name="search" placeholder="Pesquisar"/>
+    </form>
+    <a href="/events/new"><button class="blue">Novo contato</button></a>
 </div>
+
+@foreach($contacts as $contact)
+    <div class="flex item">
+        <p>{{ $contact->nome }} </p> 
+        <p>{{ $contact->email }}</p>
+    </div>
+@endforeach
 
 @endsection

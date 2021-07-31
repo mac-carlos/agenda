@@ -17,8 +17,16 @@ class CreateContactsTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('email')->unique();
-            $table->string('cpf')->unique();
+            $table->string('cpf', 11)->unique();
+            $table->date('nascimento');
             $table->string('celular')->unique();
+            $table->string('residencial');
+            $table->string('comercial');
+            $table->string('rua');
+            $table->string('numero');
+            $table->string('bairro');
+            $table->string('cidade');
+            $table->string('estado');
             $table->timestamps();
         });
     }

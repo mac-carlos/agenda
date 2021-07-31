@@ -20,5 +20,8 @@ Route::get('/', [ContactsController::class, 'index']);
 
 Route::get('/info', [InfoController::class, 'index']);
 
-Route::get('/new', [NewController::class, 'index']);
+Route::get('/events/new', [NewController::class, 'index']);
+
+Route::post('/events', [NewController::class, 'store']);
+
 

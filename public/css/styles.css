@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * 
 {
@@ -9,12 +9,12 @@
 
 :root 
 {
-	--blue: #0a7cfe;
-	--gray: #f7f7f9;
-	--green: #2ea44f;
+	--blue: #1a73e8;
+	--white: #f6f7fb;
+	--gray: #e4e7ee;
+	--green: #34a853;
 	--orange: #f9b05a;
-	--txt-gray: #bababc;
-	--bg:  #f7f7f9;
+	--txt-blue: #103255;
 	
 	--radius: .5rem;
 }
@@ -22,7 +22,8 @@
 html
 {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: calc(100vw - 2rem);
+	background-color: var(--white);
 }
 
 body
@@ -30,43 +31,94 @@ body
 	max-width: 41rem;
     margin: 5rem auto;
     padding: 0 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.75;
 	-moz-osx-font-smoothing: grayscale !important;
     -moz-font-smoothing: subpixel-antialiased !important;
     -webkit-font-smoothing: subpixel-antialiased !important;
     text-rendering: geometricPrecision !important;
+	color: #131313;
+}
+
+.flex
+{
+	display:flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+
+}
+
+button, .item, input, select
+{
+	padding: .7rem 1rem;
+	border-radius: var(--radius);
+}
+
+.item
+{
+	background-color: var(--gray);
+	margin-bottom: .5rem;
 }
 
 h1 { font-size: 200%; }
 
-p, input { font-size: 100%; }
-
-input 
+h2 
 {
-	width: 50%;
-	border: none;
+	font-size: 125%;
+	padding: 1rem 0;
+}
+
+p, button, select, input
+{
+	color: #103255; 
+	font-size: 100%; 
+	border: 1px solid transparent; 
+}
+
+select
+{
+	width: min-max(70%, 90%);
 	border-radius: var(--radius);
-	background-color: var(--gray);
-	padding: .8rem 1rem;
+	background-color: #fff;
 	margin-bottom: 1rem;
+	border: 1px solid var(--gray);
 }
 
 ul { margin-left: 1rem; }
 
 li { padding-bottom: .5rem; }
 
-button {
+a {text-decoration: none;}
+
+button 
+{
 	display: block;
-	padding: .3rem 1.5rem;
 	border-radius: var(--radius);
-	border: 1px solid;
-	color: #fff;
+	border: 1px solid transparent;
 	cursor: pointer;
 }
 
-.btn-green {
-    border-color: #30934d;
-	background-color: #2ea44f;
-	color: #fff;
+.blue
+{
+	background: var(--blue);
+	color: var(--white);
+	cursor: pointer;
+}
+
+.gray 
+{
+	background: var(--gray);
+	color: var(--txt-blue);
+}
+
+input {margin-bottom: 1rem; border-color: var(--gray);}
+
+.msg
+{
+	background: var(--green);
+	color: white;
+	text-align: center;
+	border-radius: var(--radius);
+	padding: 1rem;
+	margin-bottom: 1rem;
 }
