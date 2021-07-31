@@ -14,10 +14,12 @@
 </div>
 
 @foreach($contacts as $contact)
-    <div class="flex item">
-        <p>{{ $contact->nome }} </p> 
-        <p>{{ $contact->email }}</p>
-    </div>
+    <a href="/events/{{ $contact->id }}">
+        <div class="flex item">
+            <p>{{ $contact->nome }} </p> 
+            <p>{{ $contact->email }}</p>
+        </div>
+    </a>
 @endforeach
 
 @endsection

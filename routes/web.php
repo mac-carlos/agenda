@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactsController;
-use App\Http\Controllers\InfoController;
 use App\Http\Controllers\NewController;
 
 /*
@@ -24,4 +23,4 @@ Route::get('/events/new', [NewController::class, 'index']);
 
 Route::post('/events', [NewController::class, 'store']);
 
-
+Route::get('/events/{id}', [ContactsController::class, 'show']);

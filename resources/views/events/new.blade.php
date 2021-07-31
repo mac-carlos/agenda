@@ -23,6 +23,7 @@
         <input type="text" id="rua" name="rua" placeholder="Rua"/>
         <input type="text" id="numero" name="numero" placeholder="Número"/>
         <input type="text" id="bairro" name="bairro" placeholder="Bairro"/>
+        <input type="text" id="cep" name="cep" placeholder="CEP"/>
     </div>
     </div>
         <input type="text" id="cidade" name="cidade" placeholder="Cidade"/>

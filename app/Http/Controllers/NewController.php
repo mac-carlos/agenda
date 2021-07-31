@@ -28,6 +28,7 @@ class NewController extends Controller
         $contact->celular = $request->celular;
         $contact->residencial = $request->residencial;
         $contact->comercial = $request->comercial;
+        $contact->cep = $request->cep;
         $contact->cpf = $request->cpf;
         $contact->rua = $request->rua;
         $contact->numero = $request->numero;

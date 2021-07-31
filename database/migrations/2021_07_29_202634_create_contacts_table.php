@@ -25,6 +25,7 @@ class CreateContactsTable extends Migration
             $table->string('rua');
             $table->string('numero');
             $table->string('bairro');
+            $table->string('cep');
             $table->string('cidade');
             $table->string('estado');
             $table->timestamps();
