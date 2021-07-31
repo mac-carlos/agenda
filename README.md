@@ -1,5 +1,5 @@
-<p style="text-align:center">
-    <img src="assets/image.png" width="350px">
+<p align="center">
+    <img src="assets/image.png" width="500px">
 </p>
 
 Agenda é uma aplicação simples em php, html e css com banco de dados em mysql criada utilizando o framework [Laravel](https://laravel.com/).
