@@ -1,19 +1,19 @@
 <p style="text-align:center">
-    <img src="assets/image.png">
+    <img src="assets/image.png" width="350px">
 </p>
 
 Agenda é uma aplicação simples em php, html e css com banco de dados em mysql criada utilizando o framework [Laravel](https://laravel.com/).
 
 ## Eixos Solicitados (telas)
 
-* Cadastro dos dados pessoais do contato
+### Cadastro dos dados pessoais do contato
 
 - [x] Nome
 - [x] CPF (único)
 - [x] E-mail (único)
 - [x] Data de nascimento (correção de formato)
 
-* Cadastro de endereços do contato
+### Cadastro de endereços do contato
 
 - [x] Seletor
 - [x] CEP
@@ -24,7 +24,7 @@ Agenda é uma aplicação simples em php, html e css com banco de dados em mysql
 - [x] Estado (seletor)
 - [ ] Edição de dados
 
-* Cadastrar telefones
+### Cadastrar telefones
 
 - [x] Seletor
 - [x] Telefone comercial (único)
@@ -32,9 +32,9 @@ Agenda é uma aplicação simples em php, html e css com banco de dados em mysql
 - [ ] Celular (único e obrigatório)
 - [ ] Edição de dados
 
-* Consultar os contatos
+### Consultar os contatos
 
-- [ ] Busca do tipo ​%like%
+- [ ] Busca do tipo ```​%like%```
 - [ ] Carregar dados da pesquisa resultante
 
 ## Instalação (self-hosted)
@@ -59,7 +59,9 @@ E a instalação está completa.
 
 ```bash
 git clone https://github.com/mac-carlos/agenda.git
+
 cd agenda
+
 php artisan server
 ```
 
