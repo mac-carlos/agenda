@@ -14,7 +14,7 @@
 
     <main>
         @if(session('msg'))
-            <div class="msg">{{ session('msg') }}</div>
+            <div class="msg msg-green">{{ session('msg') }}</div>
         @endif
         @yield('content')
     </main>

@@ -22,4 +22,10 @@
     </a>
 @endforeach
 
+@if(count($contacts) == 0)
+    <a href="/events/new">
+        <div class="msg msg-gray">Seus contatos aparecerão aqui</div>
+    </a>
+@endif
+
 @endsection

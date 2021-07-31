@@ -5,7 +5,7 @@
 @section('content')
 
 <h1>{{ $contact->nome }}</h1>
-<p>CPF: {{ $contact->cpf }}, Email: {{ $contact->email }}</p>
+<p>Data de nascimento: {{ date('d/m/Y', strtotime($contact->nascimento)) }}, CPF: {{ $contact->cpf }}, Email: {{ $contact->email }}</p>
 <h2>Telefone</h2>
 <ul>
     <li>Celular: {{ $contact->celular }}</li> 

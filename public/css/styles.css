@@ -84,7 +84,7 @@ select
 	border: 1px solid var(--gray);
 }
 
-ul { margin-left: 2rem; }
+ul { margin-left: 1rem; }
 
 li { padding-bottom: .5rem; }
 
@@ -115,10 +115,20 @@ input {margin-bottom: 1rem; border-color: var(--gray);}
 
 .msg
 {
-	background: var(--green);
-	color: white;
 	text-align: center;
 	border-radius: var(--radius);
 	padding: 1rem;
 	margin-bottom: 1rem;
+}
+
+.msg-green 
+{
+	background: var(--green);
+	color: white;
+}
+
+.msg-gray
+{
+	background: var(--gray);
+	color: var(--txt-blue);
 }

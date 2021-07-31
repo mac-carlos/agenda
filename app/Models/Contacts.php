@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class contacts extends Model
 {
     use HasFactory;
+
+    protected $data = ['date'];
 }

@@ -11,7 +11,7 @@
     <input type="text" id="nome" name="nome" placeholder="Nome completo"/>
     <input type="email" id="email" name="email" placeholder="Email"/>
     <input type="text" id="cpf" name="cpf" placeholder="Cpf"/>
-    <input type="text" id="nascimento" name="nascimento" placeholder="Data de nascimento"/>
+    <input type="date" id="nascimento" name="nascimento"/>
     <h2>Telefones:</h2>
     <div>
         <input type="text" id="celular" name="celular" placeholder="Celular"/>
