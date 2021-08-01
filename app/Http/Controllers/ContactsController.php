@@ -29,6 +29,13 @@ class ContactsController extends Controller
 
         return view('events.show', ['contact' => $contact]);
     }
+
+    public function destroy($id)
+    {
+        Contacts::findOrFail($id)->delete();
+
+        return redirect('/')->with('msg', 'Contato deletado!');
+    }
 /*
     public function store(Request $request)
     {

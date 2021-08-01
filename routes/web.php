@@ -24,3 +24,5 @@ Route::get('/events/new', [NewController::class, 'index']);
 Route::post('/events', [NewController::class, 'store']);
 
 Route::get('/events/{id}', [ContactsController::class, 'show']);
+
+Route::delete('/events/{id}', [ContactsController::class, 'destroy']);

@@ -16,4 +16,16 @@
 <p>{{ $contact->rua }} - {{ $contact->numero }}, {{ $contact->bairro }} - {{ $contact->cep }}</p>
 <p>{{ $contact->cidade }} - {{ $contact->estado }}</p>
 
+<div class="flex">
+    <a href="/"><button class="blue">Voltar</button></a>
+    <div class="flex">
+        <a style="margin-right: 1rem;"href=""><button class="green">Editar</button></a>
+        <form action="/events/{{ $contact->id }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="red">Deletar</button>
+        </form>
+    </div>
+</div>
+
 @endsection

@@ -14,6 +14,7 @@
 	--gray: #e4e7ee;
 	--green: #34a853;
 	--orange: #f9b05a;
+	--red: #ea4335;
 	--txt-blue: #103255;
 	
 	--radius: .5rem;
@@ -44,8 +45,6 @@ body
 {
 	display:flex;
 	justify-content: space-between;
-	padding: 1rem 0;
-
 }
 
 button, .item, input, select
@@ -70,7 +69,7 @@ h2
 
 p, button, select, input, li
 {
-	color: #103255; 
+	color: var(--txt-blue); 
 	font-size: 100%; 
 	border: 1px solid transparent; 
 }
@@ -103,6 +102,18 @@ button
 	background: var(--blue);
 	color: var(--white);
 	cursor: pointer;
+}
+
+.red
+{
+	background: var(--red);
+	color: var(--white);
+}
+
+.green
+{
+	color: var(--white);
+	background: var(--green);
 }
 
 .gray 
