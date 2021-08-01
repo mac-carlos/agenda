@@ -36,6 +36,22 @@ class ContactsController extends Controller
 
         return redirect('/')->with('msg', 'Contato deletado!');
     }
+
+    public function edit($id)
+    {
+        $contact = Contacts::findOrFail($id);
+
+        return view('events.edit', ['contact' => $contact]);
+    }
+
+    public function update(Request $request)
+    {
+        $data = $request->all();
+        
+        Contacts::findOrFail($request->id)->update($data);
+
+        return redirect('/')->with('msg', 'Contato editado!');
+    }
 /*
     public function store(Request $request)
     {

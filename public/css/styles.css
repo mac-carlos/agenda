@@ -143,3 +143,8 @@ input {margin-bottom: 1rem; border-color: var(--gray);}
 	background: var(--gray);
 	color: var(--txt-blue);
 }
+
+.vertical-space
+{
+	padding: 1rem 0;
+}

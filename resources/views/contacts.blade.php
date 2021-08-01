@@ -6,7 +6,7 @@
 
 <h1>Contatos</h1>
 
-<div class="flex search">
+<div class="flex search vertical-space">
     <form action="/" method="GET">
         <input type="text" id="search" name="search" placeholder="Pesquisar"/>
     </form>
@@ -41,7 +41,7 @@
 
 @if(count($contacts) == 0 && $search)
     <a href="/">    
-        <div class="msg msg-gray">Sem resultados pra pesquisa :(</div>
+        <div class="msg msg-gray">Sem resultados :(</div>
     </a>
 @elseif(count($contacts) == 0)
     <a href="/events/new">

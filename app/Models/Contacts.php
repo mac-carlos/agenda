@@ -9,5 +9,7 @@ class contacts extends Model
 {
     use HasFactory;
 
-    protected $data = ['date'];
+    protected $nascimento = ['date'];
+
+    protected $guarded = [];
 }
