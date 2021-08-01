@@ -34,8 +34,8 @@ Agenda é uma aplicação simples em php, html e css com banco de dados em mysql
 
 ### Consultar os contatos
 
-- [ ] Busca do tipo ```​%like%```
-- [ ] Carregar dados da pesquisa resultante
+- [x] Busca do tipo ```​%like%```
+- [x] Carregar dados da pesquisa resultante
 
 ## Instalação (self-hosted)
 
@@ -64,6 +64,8 @@ cd agenda
 
 php artisan server
 ```
+
+Pelo XAMPP Control Panel inicie os módulos de Apache e MySQL.
 
 > Vá ao local-host ```127.0.0.1:8000``` para ver a aplicação.
 
