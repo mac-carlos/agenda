@@ -75,12 +75,41 @@ git clone https://github.com/mac-carlos/agenda.git
 
 cd agenda
 
+composer install
+```
+
+No *XAMPP Control Panel* ative as opções **Apache** e **MySQL** 
+
+Abra seu navegador e navege até ```localhost/phpmyadmin/```
+
+Na barra lateral da esquerda clique em novo e no campo "Nome da base de dados" crie uma DB chamada ```contatos```
+
+Na pasta do projeto faça uma cópia do arquivo ```.env.example``` com o nome de ```.env```.
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=contatos // Substitua esse trecho em .env
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+no terminal da pasta escreva
+
+```bash
+php artisan key:generate
+
+php artisan migrate
+
 php artisan server
 ```
 
-Pelo XAMPP Control Panel inicie os módulos de Apache e MySQL.
+E pronto, o programa está configurado. 
 
 > Vá ao local-host ```127.0.0.1:8000``` para ver a aplicação.
+
+*(Em caso de dúvidas siga [este tutorial](https://www.youtube.com/watch?v=KrsicG8gfVg))*
 
 ## Autor
 
