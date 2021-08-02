@@ -13,6 +13,11 @@ Agenda é uma aplicação simples em php, html e css com banco de dados em mysql
 - [x] E-mail (único)
 - [x] Data de nascimento (correção de formato)
 
+#### Diferenciais modafoca
+
+- [ ] Criar os tipos das colunas do banco de dados da maneira mais adequada ao tipo de dado salvo (**???**)
+- [ ] Validar se o CPF é um número válido no backend
+
 ### Cadastro de endereços do contato
 
 - [x] Seletor
@@ -22,7 +27,11 @@ Agenda é uma aplicação simples em php, html e css com banco de dados em mysql
 - [x] Bairro
 - [x] Cidade
 - [x] Estado (seletor)
-- [ ] Edição de dados
+- [x] Edição de dados
+
+#### Diferenciais modafoca
+
+- [ ] Ao digitar o CEP o sistema vai consultar via Ajax a API [viacep](http://viacep.com.br/), e carregar automaticamente os dados de: rua, bairro, cidade e estado, sendo necessário o usuário somente inserir o número;
 
 ### Cadastrar telefones
 
@@ -30,11 +39,15 @@ Agenda é uma aplicação simples em php, html e css com banco de dados em mysql
 - [x] Telefone comercial (único)
 - [x] Telefone residencial (único)
 - [ ] Celular (único e obrigatório)
-- [ ] Edição de dados
+- [x] Edição de dados
+
+#### Diferenciais modafoca
+
+- [ ] Aplicar blur ou keyup nos números de telefone
 
 ### Consultar os contatos
 
-- [x] Busca do tipo ```​%like%```
+- [x] Busca do tipo ```%like%```
 - [x] Carregar dados da pesquisa resultante
 
 ## Instalação (self-hosted)
