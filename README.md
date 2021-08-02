@@ -66,9 +66,9 @@ Certifique-se que a pasta do php está no Path e então basta rodar o seguinte c
 composer global require laravel/installer
 ```
 
-E a instalação está completa.
+Assim podemos seguir para a intalação do sistema.
 
-### Instalação
+### Instalação do Sistema
 
 ```bash
 git clone https://github.com/mac-carlos/agenda.git
