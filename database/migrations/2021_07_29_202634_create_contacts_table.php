@@ -20,14 +20,14 @@ class CreateContactsTable extends Migration
             $table->string('cpf', 11)->unique();
             $table->dateTime('nascimento');
             $table->string('celular')->unique();
-            $table->string('residencial');
-            $table->string('comercial');
-            $table->string('rua');
-            $table->string('numero');
-            $table->string('bairro');
-            $table->string('cep');
-            $table->string('cidade');
-            $table->string('estado');
+            $table->string('residencial')->nullable();
+            $table->string('comercial')->nullable();
+            $table->string('rua')->nullable();
+            $table->string('numero')->nullable();
+            $table->string('bairro')->nullable();
+            $table->string('cep')->nullable();
+            $table->string('cidade')->nullable();
+            $table->string('estado')->nullable();
             $table->timestamps();
         });
     }
