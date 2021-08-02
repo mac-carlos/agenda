@@ -31,14 +31,14 @@ Agenda é uma aplicação simples em php, html e css com banco de dados em mysql
 
 #### Diferenciais modafoca
 
-- [ ] Ao digitar o CEP o sistema vai consultar via Ajax a API [viacep](http://viacep.com.br/), e carregar automaticamente os dados de: rua, bairro, cidade e estado, sendo necessário o usuário somente inserir o número;
+- [x] Ao digitar o CEP o sistema vai consultar via Ajax a API [viacep](http://viacep.com.br/), e carregar automaticamente os dados de: rua, bairro, cidade e estado, sendo necessário o usuário somente inserir o número;
 
 ### Cadastrar telefones
 
 - [x] Seletor
 - [x] Telefone comercial (único)
 - [x] Telefone residencial (único)
-- [ ] Celular (único e obrigatório)
+- [x] Celular (único e obrigatório)
 - [x] Edição de dados
 
 #### Diferenciais modafoca
