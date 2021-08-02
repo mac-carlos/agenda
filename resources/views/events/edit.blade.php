@@ -30,6 +30,7 @@
     </div>
         <input type="text" id="cidade" name="cidade" placeholder="Cidade" value="{{ $contact->cidade }}"/>
         <select name="estado" id="estado" value="{{ $contact->estado }}">
+            <option value="">Estado</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
